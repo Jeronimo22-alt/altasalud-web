@@ -1202,8 +1202,8 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.05; }
 
 /* ── Móvil base (< 720px) ── */
 @media (max-width: 719px) {
-  :root { --nav-h: 72px; }
-  .nav-logo { height: 52px; }
+  :root { --nav-h: 64px; }
+  .nav-logo { display: none; }
   .nav-hamburger { display: flex; }
   .nav-links { display: none; }
 
