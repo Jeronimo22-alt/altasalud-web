@@ -1202,10 +1202,21 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.05; }
 
 /* ── Móvil base (< 720px) ── */
 @media (max-width: 719px) {
-  :root { --nav-h: 64px; }
+  :root { --nav-h: 52px; }
   .nav-logo { display: none; }
-  .nav-hamburger { display: flex; }
-  .nav-links { display: none; }
+  .nav-hamburger { display: none; }
+  .nav-links {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: visible;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-right: 16px;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-link { font-size: 12px; white-space: nowrap; }
+  .btn-nav-cta { font-size: 11px; padding: 6px 12px; white-space: nowrap; flex-shrink: 0; }
 
   .hero-content { padding-left: var(--container-pad); padding-right: var(--container-pad); }
   .hero-actions { flex-direction: column; align-items: flex-start; }
