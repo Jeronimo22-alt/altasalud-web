@@ -1217,6 +1217,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.05; }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-link { font-size: 12px; white-space: nowrap; }
   .btn-nav-cta { font-size: 11px; padding: 6px 12px; white-space: nowrap; flex-shrink: 0; }
+  .nav-mobile { display: none !important; }
 
   .hero-content { padding-left: var(--container-pad); padding-right: var(--container-pad); }
   .hero-actions { flex-direction: column; align-items: flex-start; }
